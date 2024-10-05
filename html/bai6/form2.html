@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea,
+select {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #ccc;
+    color: white;
+    border: 1px solid gray;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="div1">
+        <form action="#" method="post">
+            <span>Your message:</span>
+            <label>To</label>
+            <input type="text" id="to" name="to" placeholder="Example cafe" required>
+            <label>Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            
+            <label>Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <label>Attach File:</label>
+            <input type="file" id="file" name="file">
+        </div>
+            <span>No file chosen</span>
+
+            <label>How you found us:</label>
+            <select id="how-found" name="how-found">
+                <option value="google">Google</option>
+            </select>
+
+            <label>
+                <input type="checkbox" name="newsletter" value="yes"> Ensure this box is checked if you would like to receive email updates
+            </label>
+
+            <button type="submit">Send message</button>
+        </form>
+    </div>
+</body>
+</html>
